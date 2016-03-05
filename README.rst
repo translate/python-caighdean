@@ -1,9 +1,9 @@
 python-caighdean
-===
+================
 
 
 Install
----
+-------
 
 .. code-block:: console
 
