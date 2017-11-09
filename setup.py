@@ -13,6 +13,18 @@
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
 
+
+install_requires = ["nltk"]
+extras_require = {}
+extras_require['test'] = [
+    "pytest",
+    "pytest-mock",
+    "requests_mock",
+    "coverage",
+    "pytest-coverage",
+    "codecov",
+    "flake8"],
+
 setup(
     name='caighdean',
     version='0.0.1',
@@ -23,21 +35,14 @@ setup(
     author_email='ryan@synca.io',
     license='GPL3',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: GPL3',
         'Programming Language :: Python :: 2.7',
     ],
     keywords='python caighdean',
-    install_requires=[
-        "nltk",
-        "pytest",
-        "pytest-mock",
-        "requests_mock",
-        "coverage",
-        "pytest-coverage",
-        "codecov",
-        "flake8"],
+    install_requires=install_requires,
+    extras_require=extras_require,
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     include_package_data=True)
