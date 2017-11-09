@@ -11,8 +11,7 @@ class TranslationError(Exception):
 
 
 class Translator(object):
-
-    service_url = "http://borel.slu.edu/cgi-bin/seirbhis2.cgi"
+    service_url = "http://borel.slu.edu/cgi-bin/seirbhis3.cgi"
 
     def __init__(self, src_lang="gd"):
         self.src_lang = src_lang
