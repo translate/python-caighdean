@@ -30,5 +30,14 @@ setup(
         'Programming Language :: Python :: 2.7',
     ],
     keywords='python caighdean',
+    install_requires=[
+        "nltk",
+        "pytest",
+        "pytest-mock",
+        "requests_mock",
+        "coverage",
+        "pytest-coverage",
+        "codecov",
+        "flake8"],
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     include_package_data=True)
