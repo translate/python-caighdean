@@ -82,3 +82,6 @@ rqworker
 manage
 
 *egg-info
+
+.cache
+.coverage
