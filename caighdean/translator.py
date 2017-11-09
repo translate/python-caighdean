@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import json
@@ -27,7 +26,7 @@ class Translator(object):
     def parse_response(self, msg):
         return MosesDetokenizer().detokenize(
             [x[1] for x in json.loads(msg)],
-            return_str=True)
+            return_str=True).replace("\\n", "\n")
 
     def translate(self, phrase):
         response = self.make_request(
