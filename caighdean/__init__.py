@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import json
-
 import requests
+
+from nltk.tokenize.moses import MosesDetokenizer
 
 
 class TranslationError(Exception):
@@ -26,13 +27,14 @@ class Translator(object):
         return requests.post(self.service_url, params)
 
     def parse_response(self, msg):
-        return " ".join([x[1] for x in json.loads(msg)])
+        return MosesDetokenizer().detokenize(
+            [x[1] for x in json.loads(msg)],
+            return_str=True)
 
     def translate(self, phrase):
         response = self.make_request(
             self.request_params(phrase))
-
-        if not response.status_code == 200:
+        if response.status_code != 200:
             raise TranslationError(
                 "Unable to connect to translation service")
         return self.parse_response(response.content)
