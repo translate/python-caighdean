@@ -1,11 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#
-# Copyright (C) Pootle contributors.
-#
-# This file is a part of the Pootle project. It is distributed under the GPL3
-# or later license. See the LICENSE file for a copy of the license and the
-# AUTHORS file for copyright and authorship information.
 
 """Python caighdean
 """
@@ -38,7 +32,8 @@ setup(
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
-        'License :: OSI Approved :: GPL3',
+        ('License :: OSI Approved :: '
+         'GNU General Public License v3 or later (GPLv3+)'),
         'Programming Language :: Python :: 2.7',
     ],
     keywords='python caighdean',
