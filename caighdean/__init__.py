@@ -1,10 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from . import nltk_setup
-from .translator import Translator
+import importlib
+
+import nltk
 
 
-nltk_setup
+try:
+    _translator = importlib.import_module('caighdean.translator')
+except LookupError:
+    nltk.download('perluniprops')
+    _translator = importlib.import_module('caighdean.translator')
+Translator = _translator.Translator
+
 
 __all__ = ["Translator"]
