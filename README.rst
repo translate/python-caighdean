@@ -19,7 +19,7 @@ For development install
 
 .. code-block:: console
 
-  $ pip install -e git+git@github.com:phlax/python-caighdean#egg=caighdean
+  $ pip install -e git+git@github.com:translate/python-caighdean#egg=caighdean
   $ pip install caighdean[test]
 
 
@@ -43,11 +43,11 @@ Run
     "Iontach!" ina dhiaidh sin.
 
 
-.. |build| image:: https://img.shields.io/travis/phlax/python-caighdean/master.svg?style=flat-square
+.. |build| image:: https://img.shields.io/travis/translate/python-caighdean/master.svg?style=flat-square
         :alt: Build Status
-        :target: https://travis-ci.org/phlax/python-caighdean/branches
+        :target: https://travis-ci.org/translate/python-caighdean/branches
 
 
-.. |coverage| image:: https://img.shields.io/codecov/c/github/phlax/python-caighdean/master.svg?style=flat-square
-        :target: https://codecov.io/gh/phlax/python-caighdean/branch/master
+.. |coverage| image:: https://img.shields.io/codecov/c/github/translate/python-caighdean/master.svg?style=flat-square
+        :target: https://codecov.io/gh/translate/python-caighdean/branch/master
         :alt: Test Coverage

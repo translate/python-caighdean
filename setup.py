@@ -24,7 +24,7 @@ setup(
     version='0.0.3',
     description='Python Caighdean',
     long_description="Python caighdean",
-    url='https://github.com/phlax/python-caighdean',
+    url='https://github.com/translate/python-caighdean',
     author='Ryan Northey',
     author_email='ryan@synca.io',
     license='GPL3',

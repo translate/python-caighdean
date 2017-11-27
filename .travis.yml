@@ -1,4 +1,4 @@
-# https://travis-ci.org/#!/phlax/python-caighdean
+# https://travis-ci.org/#!/translate/python-caighdean
 sudo: false
 language: python
 python:
