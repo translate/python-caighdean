@@ -9,7 +9,7 @@ from .exceptions import TranslationError
 
 
 class Translator(object):
-    service_url = "http://borel.slu.edu/cgi-bin/seirbhis3.cgi"
+    service_url = "https://cadhan.com/api/intergaelic/3.0"
 
     def __init__(self, src_lang="gd"):
         self.src_lang = src_lang
