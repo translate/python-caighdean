@@ -8,14 +8,14 @@
 from setuptools import setup, find_packages
 
 
-install_requires = ["nltk", "requests"]
+install_requires = ["nltk", "requests", "sacremoses"]
 extras_require = {}
 extras_require['test'] = [
     "pytest",
     "pytest-mock",
     "requests_mock",
     "coverage",
-    "pytest-coverage",
+    "pytest-cov<2.6",
     "codecov",
     "flake8"],
 

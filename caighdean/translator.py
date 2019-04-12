@@ -3,7 +3,7 @@
 import json
 import requests
 
-from nltk.tokenize.moses import MosesDetokenizer
+from sacremoses import MosesDetokenizer
 
 from .exceptions import TranslationError
 
