@@ -8,7 +8,7 @@
 from setuptools import setup, find_packages
 
 
-install_requires = ["nltk", "requests", "sacremoses"]
+install_requires = ["requests", "sacremoses"]
 extras_require = {}
 extras_require['test'] = [
     "pytest",

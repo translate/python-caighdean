@@ -3,14 +3,8 @@
 
 import importlib
 
-import nltk
 
-
-try:
-    _translator = importlib.import_module('caighdean.translator')
-except LookupError:
-    nltk.download('perluniprops')
-    _translator = importlib.import_module('caighdean.translator')
+_translator = importlib.import_module('caighdean.translator')
 Translator = _translator.Translator
 
 
