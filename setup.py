@@ -21,7 +21,7 @@ extras_require['test'] = [
 
 setup(
     name='caighdean',
-    version='0.0.3',
+    version='0.0.4',
     description='Python Caighdean',
     long_description="Python caighdean",
     url='https://github.com/translate/python-caighdean',
